@@ -10,7 +10,7 @@ step-2-split:
 
 step-2-nltk:
 	python3 step-2-nltk.py > result/step-2-result-nltk.txt
-	@echo "==== step-2:done ===="
+	@echo "==== step-2-nltk:done ===="
 
 step-2-BPE:
 	python3 step-2-BPE.py > result/step-2-result-BPE.txt
