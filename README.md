@@ -16,7 +16,7 @@ decompress the file after you get it.
 
 ### Set environment variable
 
-It's **vital** to set the environment variable $NLP_DATA_PATH$ before make step-1, simply set at the root directory of the data file above is acceptable, step-1.py will scan all the subdirectories and convert all the files ended up with .json.
+It's **vital** to set the environment variable $NLP\_DATA\_PATH$ before make step-1, simply set at the root directory of the data file above is acceptable, step-1.py will scan all the subdirectories and convert all the files ended up with .json.
 
 ```bash
 export NLP_DATA_PATH="/path/to/document_parse"
