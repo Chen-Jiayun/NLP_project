@@ -2,6 +2,8 @@
 
 Contributors: Chen Jiayun, Liu Ziyang, Wang Yiyang
 
+Guide for project is in **word_representations_biomedical.ipynb**
+
 ## Data Preparation
 
 ### Get data
