@@ -13,3 +13,6 @@ step-2-nltk:
 step-2-BPE:
 	python3 step-2-BPE.py > result/step-2-result-BPE.txt
 	@echo "==== step-2-BPE:done ===="
+
+play-toy:
+	python3 toy-play.py
