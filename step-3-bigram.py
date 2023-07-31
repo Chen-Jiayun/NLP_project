@@ -1,3 +1,7 @@
+# this method works fine if the data set is small and regular
+# but when turns the real article, the model is not good enough
+# to support the accuracy...
+
 from gensim.models import Word2Vec
 from gensim.models import Phrases
 import os
