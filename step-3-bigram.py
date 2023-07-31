@@ -6,7 +6,7 @@ from gensim.models import Word2Vec
 from gensim.models import Phrases
 import os
 
-path = "result/step-2-result-split.txt"
+path = "result/step-2-result-nltk.txt"
 
 corpus = []
 
@@ -25,6 +25,6 @@ os.makedirs(os.path.dirname(model_path), exist_ok=True)
 # Train a bigram detector.
 bigram_transformer = Phrases(corpus)
 # Apply the trained MWE detector to a corpus, using the result to train a Word2vec model.
-model = Word2Vec(bigram_transformer[corpus], min_count=1)
+model = Word2Vec(bigram_transformer[corpus], min_count=20)
 
 model.save(model_path)
