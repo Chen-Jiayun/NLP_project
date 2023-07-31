@@ -1,4 +1,6 @@
 test/
+model/
+model-play.py
 toy-model.py
 toy-play.py
 toy-model/

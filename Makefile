@@ -14,5 +14,16 @@ step-2-BPE:
 	python3 step-2-BPE.py > result/step-2-result-BPE.txt
 	@echo "==== step-2-BPE:done ===="
 
+init-toy:
+	python3 toy-model.py
+	@echo "==== init-toy:done ===="
+
 play-toy:
 	python3 toy-play.py
+
+step-3-bigram:
+	python3 step-3-bigram.py
+	@echo "==== build-model:done ===="
+
+play-bigram-model:
+	python3 model-play.py
