@@ -25,19 +25,8 @@ export NLP_DATA_PATH="/path/to/document_parse"
 ```
 
 ### Step 3
-we tried 3 kinds of models:
+We trained two kind of models
 
-* the bigram model trained by ourself
-* the N-gram model trained by Facebook AI Research
-* the skip-model trained by Stanford
-
-the refernce is below:
-
-```text
-N-gram: https://arxiv.org/abs/1607.01759
-
-skip-gram: https://nlp.stanford.edu/pubs/glove.pdf
-
-```
-
+#### N-gram model
+the defination of the model is set in **ngram_model.py**, some magic number such as dimension of the vector and the particular N for the gram
 

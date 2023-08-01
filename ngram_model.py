@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+# 10k token of all
 path = "test/tokens.txt"
 corpus = []
 
@@ -13,6 +14,7 @@ def corpus_generator(file_path):
 
 corpus_generator(path)
 
+# 7-gram and dim is limited to 256
 CONTEXT_SIZE = 7
 EMBEDDING_DIM = 256
 
