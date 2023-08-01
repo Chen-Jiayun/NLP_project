@@ -17,3 +17,7 @@ step-2-BPE:
 step-3-ngram:
 	python3 step-3-n-gram.py > result/step-3-n-gram.json
 	@echo "==== step-3-ngram:done ===="
+
+step-3-skipgram:
+	python3 step-3-skip-gram.py
+	@echo "==== step-3-skipgram:done ===="
