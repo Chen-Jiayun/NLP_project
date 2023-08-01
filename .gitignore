@@ -1,4 +1,5 @@
 test/
+__pycache__/
 model/
 model-play.py
 toy-model.py
