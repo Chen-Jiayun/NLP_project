@@ -4,7 +4,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 import ngram_model
 from ngram_model import NGramLanguageModeler
-
+import json
 
 
 # build a list of tuples.
@@ -16,8 +16,6 @@ ngrams = [
     )
     for i in range(ngram_model.CONTEXT_SIZE, len(ngram_model.corpus))
 ]
-# Print the first 3, just so you can see what they look like.
-print(ngrams[:3])
 
 vocab = set(ngram_model.corpus)
 word_to_ix = {word: i for i, word in enumerate(vocab)}
@@ -56,20 +54,28 @@ for epoch in range(10):
         # Get the Python number from a 1-element Tensor by calling tensor.item()
         total_loss += loss.item()
     losses.append(total_loss)
-print(losses)  # The loss decreased every iteration over the training data!
+# print(losses)  # The loss decreased every iteration over the training data!
 
-# To get the embedding of a particular word, e.g. "beauty"
-print(model.embeddings.weight[word_to_ix["COVID-19"]])
+# To get the embedding of words
+word_vectors = {}
+for i in ngram_model.corpus:
+    word = i
+    vector = model.embeddings.weight[word_to_ix[i]].tolist()
+    word_vectors[word] = vector
 
+# 将字典转换为JSON格式
+json_output = json.dumps(word_vectors, indent=2)
+
+# 输出JSON格式结果
+print(json_output)
+
+# for persistent
 import os
 
-# 假设 n-gram-model 目录存在或可以被创建
 save_directory = 'n-gram-model'
 
-# 创建目录（如果不存在）
 if not os.path.exists(save_directory):
     os.makedirs(save_directory)
 
-# 保存模型到 n-gram-model 目录
 save_path = os.path.join(save_directory, 'my_model.pth')
 torch.save(model.state_dict(), save_path)

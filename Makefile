@@ -27,3 +27,6 @@ step-3-bigram:
 
 play-bigram-model:
 	python3 model-play.py
+
+step-3-ngram:
+	python3 step-3-n-gram-main.py > result/step-3-n-gram.json
