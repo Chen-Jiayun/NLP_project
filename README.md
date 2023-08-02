@@ -37,11 +37,13 @@ We utilized three methods for tokenization, which include using Python's built-i
 Check the detail code in Makefile or type **make step-2-{method}**
 
 ### Step 3
-We trained two kind of models
+We trained two kind of models:
 
 #### N-gram model
 
-The definition of the model is set in **ngram_model.py**, some magic number such as dimension of the vector and the particular N for the N-gram。
+---
+
+The definition of the model is set in **ngram_model.py**, some magic number such as dimension of the vector and the particular N for the N-gram.
 
 The code here is primarily derived from this document, 
 
@@ -53,11 +55,16 @@ and we made slight modifications to make it compatible with our tokens.
 
 
 #### skip-gram model
+
+---
+
 The definition of the model is set in **skip_gram_model.py**.
 
 Actually, we just made change on the guide above and changed it in to another type of training.
 
 #### Output
+
+---
 
 There are two kind of output: word embedding and model save.
 
