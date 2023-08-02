@@ -21,3 +21,6 @@ step-3-ngram:
 step-3-skipgram:
 	python3 step-3-skip-gram.py
 	@echo "==== step-3-skipgram:done ===="
+
+step-4-tSNE:
+	python3 step-4_1-tSNE.py

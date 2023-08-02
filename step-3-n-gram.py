@@ -63,10 +63,8 @@ for i in ngram_model.corpus:
     vector = model.embeddings.weight[word_to_ix[i]].tolist()
     word_vectors[word] = vector
 
-# 将字典转换为JSON格式
+# result save
 json_output = json.dumps(word_vectors, indent=2)
-
-# 输出JSON格式结果
 print(json_output)
 
 # for persistent
