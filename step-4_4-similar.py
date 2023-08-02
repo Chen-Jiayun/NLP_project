@@ -25,3 +25,6 @@ most_similar_words = [(word, similarity) for similarity, word in heapq.nlargest(
 
 for word, similarity in most_similar_words:
     print(f"'{word}', similarity: {similarity:.4f}")
+
+
+# 我 tm 不想写啦！！
