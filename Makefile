@@ -19,7 +19,7 @@ step-3-ngram:
 	@echo "==== step-3-ngram:done ===="
 
 step-3-skipgram:
-	python3 step-3-skip-gram.py
+	python3 step-3-skip-gram.py > result/step-3-skip-gram.json
 	@echo "==== step-3-skipgram:done ===="
 
 step-4-tSNE:

@@ -1,6 +1,7 @@
 test/
 __pycache__/
 n-gram-model/
+skip-gram-model/
 model/
 model-play.py
 toy-model.py
