@@ -27,3 +27,9 @@ step-4-tSNE:
 
 step-4-biotSNE:
 	python3 step-4_2-biotSNE.py
+
+step-4-cocurrence:
+	python3 step-4_3-cocurrence.py
+
+step-4-similar:
+	python3 step-4_4-similar.py
