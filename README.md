@@ -76,6 +76,8 @@ Both of the directories is not included in the git repository, but it will autom
 
 ### Step 4
 
+---
+
 #### tSNE
 we use t-SNE and plot draw all the vectors on a 2D graph
 
