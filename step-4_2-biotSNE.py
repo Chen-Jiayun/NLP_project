@@ -36,4 +36,3 @@ def plot_tsne(word_vectors, words_to_plot=10000, random_state=42):
 word_vectors_file = "result/step-3-n-gram.json"
 words, word_vectors = load_word_vectors(word_vectors_file)
 plot_tsne(word_vectors)
-print(words)
