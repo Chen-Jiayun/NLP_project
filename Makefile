@@ -24,3 +24,6 @@ step-3-skipgram:
 
 step-4-tSNE:
 	python3 step-4_1-tSNE.py
+
+step-4-biotSNE:
+	python3 step-4_2-biotSNE.py
