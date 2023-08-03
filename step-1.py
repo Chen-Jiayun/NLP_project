@@ -7,8 +7,10 @@ def get_raw_text(name):
     titles = data["metadata"]["title"]
     abstract = data.get("abstract", None)
     abstract_text = []
-
     print(titles)
+
+    # due to the limited device, we parse the titles and abstracts
+    # you may select more parts of the json file.
     if abstract:
         for item in abstract:
             abstract_text.append(item.get("text",None))
@@ -16,6 +18,7 @@ def get_raw_text(name):
             print(item_text)
 
 def process_data(path):
+    # check file recursively through os.walk
     for root, dirs, files in os.walk(path):
         for file in files:
             if file.endswith(".json"):

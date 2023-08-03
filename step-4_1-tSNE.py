@@ -14,6 +14,7 @@ def load_word_vectors(file_path):
     return words, np.array(vectors)
 
 def plot_tsne(word_vectors, words_to_plot=1000, random_state=42):
+    # reduce the dimensions
     tsne = TSNE(n_components=2, random_state=random_state)
     embeddings_2d = tsne.fit_transform(word_vectors[:words_to_plot])
 

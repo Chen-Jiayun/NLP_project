@@ -12,7 +12,6 @@ def load_word_vectors(file_path):
     words = []
     vectors = []
     for word, vector in word_vectors.items():
-        # if word in bio_words:
         words.append(word)
         vectors.append(vector)
     return words, np.array(vectors)
@@ -23,6 +22,7 @@ def plot_tsne(word_vectors, words_to_plot=10000, random_state=42):
 
     plt.figure(figsize=(10, 8))
     for i, word in enumerate(words[:words_to_plot]):
+        # select words that in bio_words
         if word in bio_words:
             x, y = embeddings_2d[i]
             plt.scatter(x, y, color='r')
