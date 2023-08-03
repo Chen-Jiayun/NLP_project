@@ -2,7 +2,7 @@
 
 Contributors: Chen Jiayun, Liu Ziyang, Wang Yiyang
 
-We are a group of undergraduate students from lower grades, and this project is our first encounter with data science (NLP) related topics. Overall, it's considered a **toy model**. Welcome to hack us, :）."
+We are a group of undergraduate students from lower grades, and this project is our first encounter with data science (NLP) related topics. Overall, it's considered a **toy model**. Welcome to hack us, :）.
 
 The guide for project is in **word_representations_biomedical.ipynb**, **cord19WordVectors.ipynb**
 
