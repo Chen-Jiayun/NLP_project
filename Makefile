@@ -1,5 +1,5 @@
 step-1:
-	python3 step-1.py > titles.txt
+	python3 step-1.py > result/stpe-1-raw.txt
 	@echo "==== step-1:done ===="
 
 step-2-split:
