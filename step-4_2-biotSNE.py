@@ -4,7 +4,12 @@ import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
 
 # set bio_words list to show
-bio_words = ["Lower", "cough", "diabetes", "Guangxi", "Shanghai"]
+# bio_words = ["Lower", "cough", "diabetes", "Guangxi", "Shanghai"]
+# bio_words = ["COVID-19", "cough", "Diabetes", "Infections", "hematopoietic","fever","transplantation","cell"]
+bio_words = ["viruses", "COVID-19", "eco-epidemiological",
+             "host", "parasites", "syndrome",
+             "fever", "Covid-19-related", "SARS-COV-2",
+             "trispora", "sepsis"]
 
 def load_word_vectors(file_path):
     with open(file_path, 'r') as f:
@@ -25,8 +30,12 @@ def plot_tsne(word_vectors, words_to_plot=10000, random_state=42):
         # select words that in bio_words
         if word in bio_words:
             x, y = embeddings_2d[i]
-            plt.scatter(x, y, color='r')
+            plt.scatter(x, y, color='r', alpha=1.0)
             plt.text(x, y, word, fontsize=8)
+        else:
+            x, y = embeddings_2d[i]
+            plt.scatter(x, y, color='b', alpha=0.01)
+            # plt.text(x, y, word, fontsize=8) 
 
     plt.title("t-SNE Visualization of Word Representations")
     plt.xlabel("t-SNE Dimension 1")
