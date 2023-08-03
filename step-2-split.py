@@ -1,5 +1,5 @@
 sep = [',', ':', '.', ';']
-file_name = "titles.txt"
+file_name = "result/step-1-raw.txt"
 
 def extract_words(article, separators):
     for separator in separators:
